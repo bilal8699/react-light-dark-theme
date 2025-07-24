@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+/* App.css */
+.light-theme {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --blue-text: #0d6efd;
+  --card-bg: #f9f9f9;
+  --btn-bg: #0d6dfd2f;
+  --btn-text: #000000;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --para-color: #444444a4;
+}
+
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --blue-text: #fffff;
+  --card-bg: #1f1f1f;
+  --btn-bg: #2c2c2c;
+  --btn-text: #ffffff;
+  --shadow: 0 4px 8px rgba(255, 255, 255, 0.189);
+  --para-color: #ccccccd9;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: sans-serif;
+  width: 100vw;
+}
+
+nav {
+  width: 100vw;
+  box-shadow: var(--shadow);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  background-color: var(--bg-color);
+}
+
+header h1 {
+  color: var(--blue-text);
+}
+
+.btn {
+  border: none;
+  background-color: var(--btn-bg);
+  color: var(--text-color);
+  box-shadow: var(--btn-shadow);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: .9rem;
+  width: 140px;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0;
+}
+
+header ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 120px 400px;
+}
+
+main h2 {
+  color: var(--blue-text);
+  margin-bottom: 20px;
+}
+
+main p {
+  color: var(--para-color);
+}
